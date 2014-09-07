@@ -7,8 +7,12 @@
 
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="/stylesheets/chat.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js" ></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" ></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,17 +20,25 @@
 </head>
 <body>
 <div class="wrapper">
-    <header>
-        Chat page!
-    </header>
-    <section>
-        there is some content
-    </section>
-    <footer>
 
-    </footer>
+    Chat page!
+    <hr>
+    <div class="chat_window row">
+        <div id ="message_box" class="padding">
+        </div>
+        <div class="controls grey padding">
+            <div class="col-xs-9">
+                <input type="text" id="message_text" class="form-control" placeholder="Text input">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="send_message" class="btn btn-default">Send message</button>
+            </div>
+        </div>
+    </div>
+
 </div>
 <script src="/javascripts/scale.fix.js"></script>
-
+<script src="/javascripts/chat.js"></script>
+<script type="text/javascript" src="http://78.46.100.78:4204/socket.io/socket.io.js" ></script>
 </body>
 </html>

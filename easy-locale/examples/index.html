@@ -22,6 +22,9 @@
             other: '%{count} elements'
           }
         },
+        app:{
+          title: 'Easy Locale example | Language:'
+        },
         table: {
           header: {
             key_and_params: 'Key and params',
@@ -44,6 +47,9 @@
             many: '%{count} монетов',
             other: '%{count} монетов'
           }
+        },
+        app:{
+          title: 'Easy Locale пример | Язык:'
         },
         table: {
           header: {
@@ -82,11 +88,11 @@
 
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading">Easy Locale example |
-    Language:
+  <div class="panel-heading">
+    <span data-t="app.title"></span>
     <select id="language">
-      <option value="en">en</option>
-      <option value="ru">ru</option>
+      <option value="en">English</option>
+      <option value="ru">Русский</option>
     </select>
   </div>
 
